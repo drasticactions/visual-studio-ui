@@ -15,7 +15,7 @@
   <data name="BrowseFilesButtonLabel" xml:space="preserve">
     <value>Browse files</value>
   </data>
-  <data name="BrowseDirectoryButtonLabel" xml:space="preserve">
-    <value>Browse directory</value>
+  <data name="BrowseButtonLabel" xml:space="preserve">
+    <value>Browse</value>
   </data>
 </root>

@@ -58,11 +58,11 @@ namespace Microsoft.VisualStudioUI.VSMac.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Browse directory.
+        ///   Looks up a localized string similar to Browse.
         /// </summary>
-        internal static string BrowseDirectoryButtonLabel {
+        internal static string BrowseButtonLabel {
             get {
-                return ResourceManager.GetString("BrowseDirectoryButtonLabel", resourceCulture);
+                return ResourceManager.GetString("BrowseButtonLabel", resourceCulture);
             }
         }
         
