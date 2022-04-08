@@ -1,6 +1,7 @@
 ﻿// Licensed to the .NET Foundation under one or more agreements. The .NET Foundation licenses this file to you under the MIT license. See the LICENSE.md file in the project root for more information.
 
 using AppKit;
+using CoreGraphics;
 using Foundation;
 using Microsoft.VisualStudioUI.Options;
 using Microsoft.VisualStudioUI.Options.Models;
@@ -63,8 +64,13 @@ namespace Microsoft.VisualStudioUI.VSMac.Options
 
                         _menuBtn.Activated += (sender, e) =>
                         {
-                            NSEvent events = NSApplication.SharedApplication.CurrentEvent;
-                            NSMenu.PopUpContextMenu(CreateMenu(), events, events.Window.ContentView);
+                            CGRect buttonFrame = _menuBtn.Frame;
+                            CGPoint menuOrigin = _menuBtn.ConvertPointToView(new CGPoint(buttonFrame.Width / 2, buttonFrame.Height / 2), null);
+
+                            var popupMenuEvent = NSEvent.MouseEvent(NSEventType.LeftMouseDown, menuOrigin, (NSEventModifierMask)0x100, 0,
+                                _menuBtn.Window.WindowNumber, _menuBtn.Window.GraphicsContext, 0, 1, 1);
+
+                            NSMenu.PopUpContextMenu(CreateMenu(), popupMenuEvent, popupMenuEvent.Window.ContentView);
                         };
                         _controlView.AddSubview(_menuBtn);
 
