@@ -3,6 +3,7 @@
 using AppKit;
 using Microsoft.VisualStudioUI.Options;
 using Microsoft.VisualStudioUI.Options.Models;
+using Microsoft.VisualStudioUI.VSMac.Properties;
 
 namespace Microsoft.VisualStudioUI.VSMac.Options
 {
@@ -58,7 +59,8 @@ namespace Microsoft.VisualStudioUI.VSMac.Options
                         BezelStyle = NSBezelStyle.RoundRect,
                         Bordered = true,
                         LineBreakMode = NSLineBreakMode.TruncatingTail,
-                        Title = "···"
+                        Title = "···",
+                        AccessibilityTitle = Resources.BrowseButtonLabel
                     };
                     _button.SizeToFit();
 

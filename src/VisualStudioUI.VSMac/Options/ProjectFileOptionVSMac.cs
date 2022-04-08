@@ -5,6 +5,7 @@ using System.IO;
 using AppKit;
 using Microsoft.VisualStudioUI.Options;
 using Microsoft.VisualStudioUI.Options.Models;
+using Microsoft.VisualStudioUI.VSMac.Properties;
 
 namespace Microsoft.VisualStudioUI.VSMac.Options
 {
@@ -66,9 +67,17 @@ namespace Microsoft.VisualStudioUI.VSMac.Options
                     {
                         BezelStyle = NSBezelStyle.RoundRect,
                         Bordered = true,
-                        LineBreakMode = NSLineBreakMode.TruncatingTail,
-                        Title = ProjectFileOption.Name ?? "···"
+                        LineBreakMode = NSLineBreakMode.TruncatingTail
                     };
+                    if (ProjectFileOption.Name != null)
+                    {
+                        _button.Title = ProjectFileOption.Name;
+                    }
+                    else
+                    {
+                        _button.Title = "···";
+                        _button.AccessibilityTitle = Resources.BrowseFilesButtonLabel;
+                    }
 
                     _button.Activated += (s, e) =>
                     {
