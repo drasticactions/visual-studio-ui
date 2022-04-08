@@ -70,6 +70,7 @@ namespace Microsoft.VisualStudioUI.VSMac.Options
             };
             _tableView.GridStyleMask = NSTableViewGridStyle.DashedHorizontalGridLine;
             _tableView.AddColumn(new NSTableColumn());
+            SetAccessibilityTitleToLabel(_tableView);
 
             var scrolledView = new NSScrollView()
             {
