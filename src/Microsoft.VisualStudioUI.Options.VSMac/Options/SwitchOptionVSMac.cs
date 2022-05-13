@@ -85,7 +85,7 @@ namespace Microsoft.VisualStudioUI.VSMac.Options
             title.StringValue = buttonLabel!;
             title.Alignment = NSTextAlignment.Left;
             title.Font = NSFont.SystemFontOfSize(NSFont.SystemFontSize, NSFontWeight.Bold);
-            title.TextColor = NSColor.LabelColor;
+            title.TextColor = NSColor.Label;
             title.TranslatesAutoresizingMaskIntoConstraints = false;
             title.SizeToFit();
 
@@ -119,7 +119,7 @@ namespace Microsoft.VisualStudioUI.VSMac.Options
                 description.StringValue = descriptionText!;
                 description.Alignment = NSTextAlignment.Left;
                 description.Font = NSFont.SystemFontOfSize(NSFont.SmallSystemFontSize);
-                description.TextColor = NSColor.SecondaryLabelColor;
+                description.TextColor = NSColor.SecondaryLabel;
                 description.TranslatesAutoresizingMaskIntoConstraints = false;
                 description.LineBreakMode = NSLineBreakMode.ByWordWrapping;
                 _optionView.AddSubview(description);

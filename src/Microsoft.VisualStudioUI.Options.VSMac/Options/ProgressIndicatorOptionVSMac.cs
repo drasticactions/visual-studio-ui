@@ -54,7 +54,7 @@ namespace Microsoft.VisualStudioUI.VSMac.Options
 
                     Alignment = NSTextAlignment.Right,
                     Font = NSFont.SystemFontOfSize(NSFont.SystemFontSize),
-                    TextColor = NSColor.LabelColor,
+                    TextColor = NSColor.Label,
                     TranslatesAutoresizingMaskIntoConstraints = false
                 };
 

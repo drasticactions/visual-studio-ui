@@ -90,7 +90,7 @@ namespace Microsoft.VisualStudioUI.VSMac.Options
                 Title = string.Empty,
                 WantsLayer = true,
                 Image = NSImage.GetSystemSymbol("plus.circle", null),
-                ContentTintColor = NSColor.SystemGreenColor,
+                ContentTintColor = NSColor.SystemGreen,
                 TranslatesAutoresizingMaskIntoConstraints = false,
                 ToolTip = StringListOption.AddToolTip
             };
@@ -105,7 +105,7 @@ namespace Microsoft.VisualStudioUI.VSMac.Options
                 WantsLayer = true,
                 Title = "",
                 Image = NSImage.GetSystemSymbol("xmark.circle", null),
-                ContentTintColor = NSColor.SystemPinkColor,
+                ContentTintColor = NSColor.SystemPink,
                 TranslatesAutoresizingMaskIntoConstraints = false,
                 ToolTip = StringListOption.RemoveToolTip
             };
@@ -125,7 +125,7 @@ namespace Microsoft.VisualStudioUI.VSMac.Options
                 left.StringValue = Option.Label + ":";
                 left.Alignment = NSTextAlignment.Right;
                 left.Font = NSFont.SystemFontOfSize(NSFont.SystemFontSize);
-                left.TextColor = NSColor.LabelColor;
+                left.TextColor = NSColor.Label;
                 left.TranslatesAutoresizingMaskIntoConstraints = false;
                 left.SizeToFit();
                 _optionView.AddSubview(left);

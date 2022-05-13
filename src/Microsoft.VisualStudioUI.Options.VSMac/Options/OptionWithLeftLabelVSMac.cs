@@ -79,7 +79,7 @@ namespace Microsoft.VisualStudioUI.VSMac.Options
         {
             if (_label != null)
             {
-                _label.TextColor = enabled ? NSColor.LabelColor : NSColor.DisabledControlText;
+                _label.TextColor = enabled ? NSColor.Label : NSColor.DisabledControlText;
             }
         }
 

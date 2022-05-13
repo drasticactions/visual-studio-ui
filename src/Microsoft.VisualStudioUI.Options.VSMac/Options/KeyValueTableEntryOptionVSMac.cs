@@ -119,7 +119,7 @@ namespace Microsoft.VisualStudioUI.VSMac.Options
                 title.StringValue = Option.Label + ":";
                 title.Alignment = NSTextAlignment.Left;
                 title.Font = NSFont.SystemFontOfSize(NSFont.SystemFontSize);
-                title.TextColor = NSColor.LabelColor;
+                title.TextColor = NSColor.Label;
                 title.TranslatesAutoresizingMaskIntoConstraints = false;
                 title.SizeToFit();
                 _optionView.AddSubview(title);

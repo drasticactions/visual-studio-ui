@@ -37,7 +37,7 @@ namespace Microsoft.VisualStudioUI.VSMac.Options
             var background = new NSBox();
             background.BoxType = NSBoxType.NSBoxCustom;
             background.FillColor = NSColor.AlternatingContentBackgroundColors[1];
-            background.BorderColor = NSColor.SeparatorColor;
+            background.BorderColor = NSColor.Separator;
             background.BorderWidth = 1;
             background.CornerRadius = 8;
             background.Title = "";
@@ -63,7 +63,7 @@ namespace Microsoft.VisualStudioUI.VSMac.Options
                 titleLabel.Alignment = NSTextAlignment.Left;
                 titleLabel.Font =
                     NSFont.SystemFontOfSize(NSFont.SystemFontSize, NSFontWeight.Bold);
-                titleLabel.TextColor = NSColor.LabelColor;
+                titleLabel.TextColor = NSColor.Label;
                 titleLabel.TranslatesAutoresizingMaskIntoConstraints = false;
 
                 cardView.AddSubview(titleLabel);

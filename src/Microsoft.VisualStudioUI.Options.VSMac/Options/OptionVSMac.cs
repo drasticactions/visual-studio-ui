@@ -43,7 +43,7 @@ namespace Microsoft.VisualStudioUI.VSMac.Options
             label.StringValue = labelString + ":";
 
             label.Alignment = NSTextAlignment.Right;
-            label.TextColor = NSColor.LabelColor;
+            label.TextColor = NSColor.Label;
             label.TranslatesAutoresizingMaskIntoConstraints = false;
             label.MaximumNumberOfLines = 2;
             if (labelString.Length < 32)
@@ -78,7 +78,7 @@ namespace Microsoft.VisualStudioUI.VSMac.Options
             description.StringValue = descriptionString;
             description.Alignment = NSTextAlignment.Left;
             description.Font = NSFont.SystemFontOfSize(NSFont.SmallSystemFontSize);
-            description.TextColor = NSColor.SecondaryLabelColor;
+            description.TextColor = NSColor.SecondaryLabel;
             description.TranslatesAutoresizingMaskIntoConstraints = false;
 
             description.WidthAnchor.ConstraintEqualTo(354f).Active = true;
