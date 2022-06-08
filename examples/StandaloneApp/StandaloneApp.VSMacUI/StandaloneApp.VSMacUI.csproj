@@ -92,11 +92,11 @@
     <InterfaceDefinition Include="MainMenu.xib" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\VisualStudioUI\VisualStudioUI.csproj">
+    <ProjectReference Include="..\..\..\src\VisualStudioUI.Options\VisualStudioUIUI.Options.csproj">
       <Project>{F08A99F8-D704-40F4-8B59-73B54D16AA7C}</Project>
       <Name>VisualStudioUI</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\src\VisualStudioUI.VSMac\VisualStudioUI.VSMac.csproj">
+    <ProjectReference Include="..\..\..\src\VisualStudioUIUI.Options.VSMac\VisualStudioUIUI.Options.VSMac.csproj">
       <Project>{D5152AC5-BF5B-4DA7-B8E0-57D55BE297AC}</Project>
       <Name>VisualStudioUI.VSMac</Name>
     </ProjectReference>

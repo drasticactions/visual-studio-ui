@@ -15,7 +15,7 @@
     <PackageReference Include="System.Collections.Immutable" Version="$(SystemCollectionsImmutableVersion)" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VisualStudioUI\VisualStudioUI.csproj" />
+    <ProjectReference Include="..\VisualStudioUI.Options\VisualStudioUI.Options.csproj" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Properties\Resources.resx">
