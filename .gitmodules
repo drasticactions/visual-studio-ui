@@ -1,0 +1,3 @@
+[submodule "external/standard-ui"]
+	path = external/standard-ui
+	url = git@github.com:dotnet-standard-ui/standard-ui.git
