@@ -6,16 +6,21 @@
     <OutputType>Library</OutputType>
     <TargetFramework>net6.0-macos</TargetFramework>
     <RootNamespace>Microsoft.VisualStudioUI.VSMac</RootNamespace>
-    <AssemblyName>Microsoft.VisualStudioUI.VSMac</AssemblyName>
+    <AssemblyName>Microsoft.VisualStudioUI.Options.VSMac</AssemblyName>
     <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
     <Nullable>enable</Nullable>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <EnableCodeSigning>false</EnableCodeSigning>
+    <UseSGen>false</UseSGen>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <EnableCodeSigning>false</EnableCodeSigning>
+    <UseSGen>false</UseSGen>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Collections.Immutable" Version="$(SystemCollectionsImmutableVersion)" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\VisualStudioUI.Options\VisualStudioUI.Options.csproj" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Properties\Resources.resx">
@@ -27,5 +32,8 @@
     <Compile Update="Properties\Resources.Designer.cs">
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.VisualStudioUI.Options\Microsoft.VisualStudioUI.Options.csproj" />
   </ItemGroup>
 </Project>
