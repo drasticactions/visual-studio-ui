@@ -9,6 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\VisualStudioUI.Options\VisualStudioUI.Options.csproj" />
+    <ProjectReference Include="..\..\..\..\src\Microsoft.VisualStudioUI.Options\Microsoft.VisualStudioUI.Options.csproj">
+      <PrivateAssets></PrivateAssets>
+    </ProjectReference>
   </ItemGroup>
 </Project>
