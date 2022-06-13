@@ -105,7 +105,7 @@ namespace Microsoft.VisualStudioUI.VSMac.Options
             bottomLabel.StringValue = imageFile.Label ?? string.Empty;
             bottomLabel.Alignment = NSTextAlignment.Center;
             bottomLabel.Font = NSFont.SystemFontOfSize(NSFont.SmallSystemFontSize);
-            bottomLabel.TextColor = NSColor.LabelColor;
+            bottomLabel.TextColor = NSColor.Label;
             bottomLabel.TranslatesAutoresizingMaskIntoConstraints = false;
             bottomLabel.Tag = -1;
 

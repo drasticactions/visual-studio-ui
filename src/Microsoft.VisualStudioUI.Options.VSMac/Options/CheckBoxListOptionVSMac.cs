@@ -111,7 +111,7 @@ namespace Microsoft.VisualStudioUI.VSMac.Options
                 left.StringValue = Option.Label + ":";
                 left.Alignment = NSTextAlignment.Right;
                 left.Font = NSFont.SystemFontOfSize(NSFont.SystemFontSize);
-                left.TextColor = NSColor.LabelColor;
+                left.TextColor = NSColor.Label;
                 left.TranslatesAutoresizingMaskIntoConstraints = false;
                 left.SizeToFit();
                 _optionView.AddSubview(left);

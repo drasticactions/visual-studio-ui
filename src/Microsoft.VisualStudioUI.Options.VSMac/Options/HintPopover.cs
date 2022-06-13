@@ -82,7 +82,7 @@ namespace Microsoft.VisualStudioUI.VSMac.Options
                 }
             }
             */
-            return NSColor.LabelColor;
+            return NSColor.Label;
         }
     }
 
