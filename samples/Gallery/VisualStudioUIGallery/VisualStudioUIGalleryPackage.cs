@@ -26,6 +26,7 @@ namespace VisualStudioUIGallery
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
     [Guid(VisualStudioUIGalleryPackage.PackageGuidString)]
     [ProvideMenuResource("Menus.ctmenu", 1)]
+    [ProvideToolWindow(typeof(GalleryWindow))]
     public sealed class VisualStudioUIGalleryPackage : AsyncPackage
     {
         /// <summary>
@@ -48,6 +49,7 @@ namespace VisualStudioUIGallery
             // Do any initialization that requires the UI thread after switching to the UI thread.
             await this.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
             await TestCommand.InitializeAsync(this);
+            await GalleryWindowCommand.InitializeAsync(this);
         }
 
         #endregion
