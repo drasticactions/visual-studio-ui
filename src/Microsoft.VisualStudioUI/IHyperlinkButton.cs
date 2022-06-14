@@ -4,7 +4,7 @@ using Microsoft.StandardUI.Controls;
 namespace Microsoft.VisualStudioUI
 {
     [StandardControl]
-    public interface IDocLink : IStandardControl
+    public interface IHyperlinkButton : IStandardControl
     {
         string Url { get; set; }
     }

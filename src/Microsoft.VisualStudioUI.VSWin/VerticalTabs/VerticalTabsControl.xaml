@@ -6,6 +6,8 @@
              xmlns:local="clr-namespace:Microsoft.VisualStudioUI.VSWin.VerticalTabs"
              xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.15.0"
              xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.15.0"
+             xmlns:vsuii="clr-namespace:Microsoft.VisualStudioUI.VSWin"
+             xmlns:ui="clr-namespace:Microsoft.VisualStudioUI;assembly=Microsoft.VisualStudioUI"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
@@ -78,10 +80,8 @@
                                     <MultiTrigger.Conditions>
                                         <Condition x:Uid="Condition_1" Property="IsMouseOver" Value="True" />
                                     </MultiTrigger.Conditions>
-                                    <!--
                                     <Setter x:Uid="Setter_105" TargetName="cp" Property="TextBlock.Foreground" Value="{DynamicResource {x:Static vsuii:InfoBadgeColors.BackgroundFocusedBrushKey}}" />
                                     <Setter x:Uid="Setter_30" TargetName="IndicatorBar" Property="Fill" Value="{DynamicResource {x:Static vsuii:InfoBadgeColors.BackgroundFocusedBrushKey}}" />
-                                    -->
                                 </MultiTrigger>
                                 <MultiTrigger x:Uid="MultiTrigger_2">
                                     <MultiTrigger.Conditions>
@@ -89,9 +89,7 @@
                                         <Condition x:Uid="Condition_3" Property="IsSelected" Value="True" />
                                     </MultiTrigger.Conditions>
                                     <Setter x:Uid="Setter_100" TargetName="cp" Property="TextBlock.FontWeight" Value="Bold" />
-                                    <!--
                                     <Setter x:Uid="Setter_104" TargetName="IndicatorBar" Property="Fill" Value="{DynamicResource {x:Static vsuii:InfoBadgeColors.BackgroundFocusedBrushKey}}" />
-                                    -->
                                 </MultiTrigger>
                                 <MultiTrigger x:Uid="MultiTrigger_3">
                                     <MultiTrigger.Conditions>
@@ -100,9 +98,7 @@
                                     </MultiTrigger.Conditions>
                                     <Setter x:Uid="Setter_106" TargetName="Bd" Property="Background" Value="{DynamicResource {x:Static vsui:EnvironmentColors.ComboBoxBackgroundBrushKey}}" />
                                     <Setter x:Uid="Setter_102" TargetName="cp" Property="TextBlock.FontWeight" Value="Bold" />
-                                    <!--
                                     <Setter x:Uid="Setter_103" TargetName="IndicatorBar" Property="Fill" Value="{DynamicResource {x:Static vsuii:InfoBadgeColors.BackgroundFocusedBrushKey}}" />
-                                    -->
                                 </MultiTrigger>
                             </ControlTemplate.Triggers>
                         </ControlTemplate>
@@ -126,9 +122,9 @@
                              Background="Transparent"
                              BorderThickness="0"
                              ItemContainerStyle="{StaticResource FeatureListItemStyle}"
-                             ItemsSource="{Binding Features}"
+                             ItemsSource="{Binding Tabs}"
                              ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                             SelectedItem="{Binding SelectedFeature}"
+                             SelectedItem="{Binding SelectedTab}"
                              TabIndex="0">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate x:Uid="ItemsPanelTemplate_1">
@@ -136,17 +132,17 @@
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
-                <DataTemplate x:Uid="DataTemplate_1" >
+                <DataTemplate x:Uid="DataTemplate_1" DataType="{x:Type ui:IVerticalTab}">
                     <Grid x:Uid="Grid_10">
                         <TextBlock x:Uid="TextBlock_2"
                                                Style="{StaticResource ListTitleStyle}"
-                                               Text="{Binding FeatureContent.Title}"
+                                               Text="{Binding Title}"
                                                TextWrapping="Wrap" />
                         <!--  This fun little bit is here to make measure/arrange layout enough space for the bold version to avoid resizing UI on selection change  -->
                         <TextBlock x:Uid="TextBlock_10"
                                                FontWeight="Bold"
                                                Style="{StaticResource ListTitleStyle}"
-                                               Text="{Binding FeatureContent.Title}"
+                                               Text="{Binding Title}"
                                                TextWrapping="Wrap"
                                                Visibility="Hidden" />
                     </Grid>

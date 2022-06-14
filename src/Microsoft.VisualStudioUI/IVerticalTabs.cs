@@ -1,16 +1,22 @@
-﻿using Microsoft.StandardUI;
+﻿using System.ComponentModel;
+using Microsoft.ComponentModelEx;
+using Microsoft.StandardUI;
 using Microsoft.StandardUI.Controls;
 
 namespace Microsoft.VisualStudioUI
 {
     [StandardControl]
+    [ContentProperty(nameof(Tabs))]
     public interface IVerticalTabs : IStandardControl
     {
-        IUICollection<IVerticalTabs> Tabs { get; }
+        IUICollection<IVerticalTab> Tabs { get; }
     }
 
-    public interface IIVerticalTab : IUIObject
+    [UIObject]
+    [ContentProperty(nameof(Title))]
+    public interface IVerticalTab : IUIObject
     {
+        [DefaultValue("")]
         string Title { get; set; }
     }
 }
