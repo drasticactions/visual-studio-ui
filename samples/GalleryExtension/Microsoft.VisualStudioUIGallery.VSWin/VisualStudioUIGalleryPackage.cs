@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using Task = System.Threading.Tasks.Task;
 
-namespace VisualStudioUIGallery
+namespace Microsoft.VisualStudioUIGallery.VSWin
 {
     /// <summary>
     /// This is the class that implements the package exposed by this assembly.

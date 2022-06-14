@@ -4,7 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace VisualStudioUIGallery
+namespace Microsoft.VisualStudioUIGallery.VSWin
 {
     /// <summary>
     /// Interaction logic for GalleryWindowControl.

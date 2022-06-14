@@ -13,8 +13,8 @@
     <ProjectGuid>{14787172-ABBF-42E1-8EBC-3C6FAE15857C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VisualStudioUIGallery</RootNamespace>
-    <AssemblyName>VisualStudioUIGallery</AssemblyName>
+    <RootNamespace>Microsoft.VisualStudioUIGallery.VSWin</RootNamespace>
+    <AssemblyName>Microsoft.VisualStudioUIGallery.VSWin</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>
     <UseCodebase>true</UseCodebase>

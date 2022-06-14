@@ -4,7 +4,7 @@ using System;
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
 
-namespace VisualStudioUIGallery
+namespace Microsoft.VisualStudioUIGallery.VSWin
 {
     /// <summary>
     /// This class implements the tool window exposed by this package and hosts a user control.

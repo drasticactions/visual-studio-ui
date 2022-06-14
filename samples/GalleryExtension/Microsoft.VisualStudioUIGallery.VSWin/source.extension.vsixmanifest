@@ -3,7 +3,7 @@
   <Metadata>
     <Identity Id="VisualStudioUIGallery.4e0f0c38-5ce8-400e-8b1b-6785fface7b1" Version="1.0" Language="en-US" Publisher="Bret Johnson" />
     <DisplayName>VisualStudioUIGallery</DisplayName>
-    <Description>Empty VSIX Project.</Description>
+    <Description>Gallery showing examples of Visual Studio UI components.</Description>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
