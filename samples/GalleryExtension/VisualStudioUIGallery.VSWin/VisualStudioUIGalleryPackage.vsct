@@ -41,15 +41,6 @@
       </Group>
     </Groups>
     
-    <Menus>
-          <Menu guid="guidVisualStudioUIGalleryPackageCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">
-            <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS" />
-            <Strings>
-              <ButtonText>Test Menu</ButtonText>
-            </Strings>
-        </Menu>
-    </Menus>
-
     <!--Buttons section. -->
     <!--This section defines the elements the user can interact with, like a menu command or a button
         or combo box in a toolbar. -->
@@ -61,16 +52,9 @@
               <CommandFlag>DefaultInvisible</CommandFlag>
               <CommandFlag>DynamicVisibility</CommandFlag>
           If you do not want an image next to your command, remove the Icon node /> -->
-      <Button guid="guidVisualStudioUIGalleryPackageCmdSet" id="TestCommandId" priority="0x0100" type="Button">
-        <Parent guid="guidVisualStudioUIGalleryPackageCmdSet" id="MyMenuGroup" />
-        <Icon guid="guidImages" id="bmpPic1" />
-        <Strings>
-          <ButtonText>Test Command</ButtonText>
-        </Strings>
-      </Button>
       <Button guid="guidVisualStudioUIGalleryPackageCmdSet" id="cmdidGalleryWindowCommand" priority="0x0100" type="Button">
         <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1" />
-        <Icon guid="guidImages1" id="bmpPic1" />
+        <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
           <ButtonText>Visual Studio UI Gallery</ButtonText>
         </Strings>
@@ -84,8 +68,7 @@
             bitmap strip containing the bitmaps and then there are the numeric ids of the elements used
             inside a button definition. An important aspect of this declaration is that the element id
             must be the actual index (1-based) of the bitmap inside the bitmap strip. -->
-      <Bitmap guid="guidImages" href="Resources\TestCommand.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
-      <Bitmap guid="guidImages1" href="Resources\GalleryWindowCommand.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+      <Bitmap guid="guidImages" href="Resources\GalleryWindowCommand.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
     </Bitmaps>
   </Commands>
 
@@ -96,9 +79,8 @@
     <!-- This is the guid used to group the menu commands together -->
     <GuidSymbol name="guidVisualStudioUIGalleryPackageCmdSet" value="{9ea3bc50-07b4-41c9-8368-01a09b332106}">
       <IDSymbol name="MyMenuGroup" value="0x1020" />
-      <IDSymbol name="TestCommandId" value="0x0100" />
       <IDSymbol name="TopLevelMenu" value="0x1021" />
-      <IDSymbol value="4130" name="cmdidGalleryWindowCommand" />
+      <IDSymbol name="cmdidGalleryWindowCommand" value="0x0100" />
     </GuidSymbol>
 
     <GuidSymbol name="guidImages" value="{dfca7769-4132-477f-80a0-f1bb86c76aa2}">
@@ -110,13 +92,5 @@
       <IDSymbol name="bmpPicStrikethrough" value="6" />
     </GuidSymbol>
   
-    <GuidSymbol value="{d76b6ace-81e2-42e3-849b-481b8cfca8ef}" name="guidImages1">
-      <IDSymbol name="bmpPic1" value="1" />
-      <IDSymbol name="bmpPic2" value="2" />
-      <IDSymbol name="bmpPicSearch" value="3" />
-      <IDSymbol name="bmpPicX" value="4" />
-      <IDSymbol name="bmpPicArrows" value="5" />
-      <IDSymbol name="bmpPicStrikethrough" value="6" />
-    </GuidSymbol>
   </Symbols>
 </CommandTable>
