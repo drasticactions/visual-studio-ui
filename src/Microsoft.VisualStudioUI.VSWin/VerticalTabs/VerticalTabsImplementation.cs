@@ -1,6 +1,7 @@
 ﻿using Microsoft.StandardUI;
 using Microsoft.StandardUI.Controls;
 using Microsoft.StandardUI.Wpf;
+using Microsoft.VisualStudio.PlatformUI.Packages.WhatsNew.UI;
 using Microsoft.VisualStudioUI.VSWin.VerticalTabs;
 
 namespace Microsoft.VisualStudioUI
@@ -13,7 +14,8 @@ namespace Microsoft.VisualStudioUI
 
         public override IUIElement Build()
         {
-            return new NativeUIElement(new VerticalTabsControl());
+            VerticalTabsControl tabsControl = new VerticalTabsControl(new VerticalTabsViewModel(Control));
+            return new NativeUIElement(tabsControl);
         }
     }
 }
