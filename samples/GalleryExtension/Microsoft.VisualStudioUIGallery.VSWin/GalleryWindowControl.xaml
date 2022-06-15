@@ -23,7 +23,7 @@
         <TextBlock FontWeight="Bold" FontSize="14" Grid.Row="0" Grid.Column="0" Margin="0,10">Control</TextBlock>
         <TextBlock FontWeight="Bold" FontSize="14" Grid.Row="0" Grid.Column="1" Margin="0,10">Example(s)</TextBlock>
 
-        <TextBlock Grid.Row="1" Grid.Column="0">Vertical Tabs</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="0">VerticalTabs</TextBlock>
         <ui:VerticalTabs Grid.Row="1" Grid.Column="1" Width="100">
             <ui:VerticalTab>Tab 1</ui:VerticalTab>
             <ui:VerticalTab>Tab 2</ui:VerticalTab>

@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\external\standard-ui\src\StandardUI\StandardUI.csproj" />
+    <ProjectReference Include="..\..\..\external\standard-ui\src\Microsoft.StandardUI\Microsoft.StandardUI.csproj" />
     <ProjectReference Include="..\..\..\src\Microsoft.VisualStudioUI\Microsoft.VisualStudioUI.csproj" />
   </ItemGroup>
 
