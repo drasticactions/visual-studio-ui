@@ -15,6 +15,9 @@
     <Deterministic>true</Deterministic>
     <LangVersion>9.0</LangVersion>
     <Nullable>enable</Nullable>
+
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\Microsoft.VisualStudioUI.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
