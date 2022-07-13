@@ -2,7 +2,6 @@
 using Microsoft.StandardUI;
 using Microsoft.StandardUI.Controls;
 using Microsoft.StandardUI.Shapes;
-using static Microsoft.StandardUI.FactoryStatics;
 
 namespace Welcome
 {
