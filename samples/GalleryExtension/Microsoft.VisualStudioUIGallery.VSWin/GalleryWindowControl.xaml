@@ -18,6 +18,8 @@
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
 
         <TextBlock FontWeight="Bold" FontSize="14" Grid.Row="0" Grid.Column="0" Margin="0,10">Control</TextBlock>
@@ -29,5 +31,11 @@
             <ui:VerticalTab>Tab 2</ui:VerticalTab>
             <ui:VerticalTab>Tab 3</ui:VerticalTab>
         </ui:VerticalTabs>
+
+        <TextBlock Grid.Row="2" Grid.Column="0">HyperlinkButton</TextBlock>
+        <ui:HyperlinkButton Grid.Row="2" Grid.Column="1" Width="100" Uri="https://www.microsoft.com">This is a hyperlink</ui:HyperlinkButton>
+
+        <TextBlock Grid.Row="3" Grid.Column="0">Image</TextBlock>
+        <ui:Image Grid.Row="3" Grid.Column="1" Width="32" Source="pack://application:,,,/VsDebugPresentationPackage;component/EditorSystem/UI/images/Debugger.DumpSummary.SetSymbolPaths.png"/>
     </Grid>
 </UserControl>

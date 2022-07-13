@@ -15,7 +15,6 @@
     <Deterministic>true</Deterministic>
     <LangVersion>9.0</LangVersion>
     <Nullable>enable</Nullable>
-
     <SignAssembly>True</SignAssembly>
     <AssemblyOriginatorKeyFile>..\Microsoft.VisualStudioUI.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
@@ -53,13 +52,20 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HyperlinkButton\HyperlinkButtonControl.xaml.cs">
+      <DependentUpon>HyperlinkButtonControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HyperlinkButton\HyperlinkButtonImplementation.cs" />
+    <Compile Include="Image\ImageImplementation.cs" />
+    <Compile Include="Image\ImageControl.xaml.cs">
+      <DependentUpon>ImageControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="InfoBadgeColors.cs" />
     <Compile Include="VerticalTabs\VerticalTabsViewModel.cs" />
     <Compile Include="VerticalTabs\VerticalTabsControl.xaml.cs">
       <DependentUpon>VerticalTabsControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="VerticalTabs\VerticalTabsImplementation.cs" />
-    <Compile Include="ModernDialogImplementation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -97,6 +103,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="HyperlinkButton\HyperlinkButtonControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Image\ImageControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="VerticalTabs\VerticalTabsControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -107,5 +121,6 @@
       <Version>17.2.32505.113</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

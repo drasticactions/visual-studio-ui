@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.ComponentModel;
 using Microsoft.StandardUI;
 using Microsoft.StandardUI.Controls;
 
@@ -7,6 +7,7 @@ namespace Microsoft.VisualStudioUI
     [StandardControl]
     public interface IImage : IStandardControl
     {
-        string ImageMoniker { get; set; }
+        [DefaultValue("")]
+        string Source { get; set; }
     }
 }
