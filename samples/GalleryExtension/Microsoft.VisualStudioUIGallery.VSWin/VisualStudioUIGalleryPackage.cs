@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.Shell;
+using Microsoft.VisualStudioUI.VSWin;
 using System;
 using System.Runtime.InteropServices;
 using System.Threading;
@@ -49,6 +50,8 @@ namespace Microsoft.VisualStudioUIGallery.VSWin
             // Do any initialization that requires the UI thread after switching to the UI thread.
             await this.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
             await GalleryWindowCommand.InitializeAsync(this);
+
+            VisualStudioUILibrary.Initialize();
         }
 
         #endregion

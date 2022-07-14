@@ -32,8 +32,3 @@ using Microsoft.VisualStudioUI;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-
-[assembly: ImportStandardControl(typeof(IVerticalTabs))]
-[assembly: ImportStandardControl(typeof(IVerticalTab))]
-[assembly: ImportStandardControl(typeof(IHyperlinkButton))]
-[assembly: ImportStandardControl(typeof(IImage))]

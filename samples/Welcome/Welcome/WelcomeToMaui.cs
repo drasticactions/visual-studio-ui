@@ -1,7 +1,7 @@
-﻿using System.ComponentModel;
-using Microsoft.StandardUI;
+﻿using Microsoft.StandardUI;
 using Microsoft.StandardUI.Controls;
 using Microsoft.StandardUI.Shapes;
+using static Microsoft.StandardUI.StandardUIStatics;
 
 namespace Welcome
 {
