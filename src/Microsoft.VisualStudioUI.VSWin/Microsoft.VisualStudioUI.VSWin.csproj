@@ -60,6 +60,7 @@
     <Compile Include="Image\ImageControl.xaml.cs">
       <DependentUpon>ImageControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VisualStudioUILibrary.cs" />
     <Compile Include="InfoBadgeColors.cs" />
     <Compile Include="VerticalTabs\VerticalTabsViewModel.cs" />
     <Compile Include="VerticalTabs\VerticalTabsControl.xaml.cs">
@@ -91,11 +92,11 @@
   <ItemGroup>
     <ProjectReference Include="..\..\external\standard-ui\src\Microsoft.StandardUI.Wpf\Microsoft.StandardUI.Wpf.csproj">
       <Project>{5fffcefd-604f-4f2f-82f7-6e9163c3ad70}</Project>
-      <Name>StandardUI.Wpf</Name>
+      <Name>Microsoft.StandardUI.Wpf</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\external\standard-ui\src\Microsoft.StandardUI\Microsoft.StandardUI.csproj">
       <Project>{0a88d3ac-d509-4d31-8198-5704ae311020}</Project>
-      <Name>StandardUI</Name>
+      <Name>Microsoft.StandardUI</Name>
     </ProjectReference>
     <ProjectReference Include="..\Microsoft.VisualStudioUI\Microsoft.VisualStudioUI.csproj">
       <Project>{eae5a81d-e394-4612-ba26-a43493d26b0b}</Project>
@@ -121,6 +122,8 @@
       <Version>17.2.32505.113</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Analyzer Include="..\..\external\standard-ui\src\Microsoft.StandardUI.SourceGenerator\bin\Debug\netstandard2.0\Microsoft.StandardUI.SourceGenerator.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

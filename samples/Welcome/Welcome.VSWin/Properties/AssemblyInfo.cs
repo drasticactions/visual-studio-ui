@@ -58,4 +58,3 @@ using Welcome;
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
 [assembly: ImportStandardControl(typeof(IWelcomeToMaui))]
-[assembly: ImportStandardControl(typeof(IVerticalTabs))]
