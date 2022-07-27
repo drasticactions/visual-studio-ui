@@ -6,5 +6,7 @@
         public static IHyperlinkButton HyperlinkButton() => VisualStudioUIFactory.HyperlinkButtonCreator();
 
         public static IImage Image() => VisualStudioUIFactory.ImageCreator();
+
+        public static ICrispImage CrispImage() => VisualStudioUIFactory.CrispImageCreator();
     }
 }

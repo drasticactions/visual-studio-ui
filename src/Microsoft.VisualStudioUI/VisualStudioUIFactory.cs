@@ -11,5 +11,6 @@ namespace Microsoft.VisualStudioUI
 
         public static Func<IHyperlinkButton> HyperlinkButtonCreator { get; set; } = UnitializedCreator<IHyperlinkButton>();
         public static Func<IImage> ImageCreator { get; set; } = UnitializedCreator<IImage>();
+        public static Func<ICrispImage> CrispImageCreator { get; set; } = UnitializedCreator<ICrispImage>();
     }
 }

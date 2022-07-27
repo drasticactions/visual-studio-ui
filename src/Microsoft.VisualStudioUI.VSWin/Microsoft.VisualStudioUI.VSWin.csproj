@@ -52,6 +52,10 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrispImage\CrispImageControl.xaml.cs">
+      <DependentUpon>CrispImageControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CrispImage\CrispImageImplementation.cs" />
     <Compile Include="HyperlinkButton\HyperlinkButtonControl.xaml.cs">
       <DependentUpon>HyperlinkButtonControl.xaml</DependentUpon>
     </Compile>
@@ -104,6 +108,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="CrispImage\CrispImageControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="HyperlinkButton\HyperlinkButtonControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
