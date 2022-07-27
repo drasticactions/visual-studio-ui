@@ -16,20 +16,24 @@ namespace Microsoft.VisualStudioUI.VSWin.CrispImage
         {
             InitializeComponent();
             _crispImage = crispImage;
-            string monikerString = (string)typeof(KnownMonikers).GetField(crispImage.KnownMoniker).GetValue(null);
+            string monikerString = (string)typeof(KnownMonikersVSUI).GetField(crispImage.KnownMoniker).GetValue(null);
             _ = ImagingUtilities.TryParseImageMoniker(monikerString, out ImageMoniker moniker);
-            TempData temp = new TempData(moniker);
-            DataContext = temp;
+            CrispImageData data = new CrispImageData(moniker, crispImage.Width, crispImage.Height);
+            DataContext = data;
         }
     }
 
-    public class TempData
+    public class CrispImageData
     {
-        public TempData(ImageMoniker knownMoniker)
+        public CrispImageData(ImageMoniker knownMoniker, double width, double height)
         {
             KnownMoniker = knownMoniker;
+            Width = width;
+            Height = height;
         }
 
         public ImageMoniker KnownMoniker { get; set; }
+        public double Width { get; set; }
+        public double Height { get; set; }
     }
 }
