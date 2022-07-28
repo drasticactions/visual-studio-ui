@@ -18,7 +18,7 @@ namespace Microsoft.VisualStudioUI.VSWin.CrispImage
         {
             InitializeComponent();
             _crispImage = crispImage;
-            string monikerString = (string)typeof(KnownMonikersVSUI).GetField(crispImage.KnownMoniker).GetValue(null);
+            string monikerString = (string)typeof(KnownImageMonikers).GetField(crispImage.KnownMoniker).GetValue(null);
             _ = ImagingUtilities.TryParseImageMoniker(monikerString, out ImageMoniker moniker);
             Color color = ColorExtensions.ToWpfColor(crispImage.ImageBackgroundColor);
             CrispImageData data = new CrispImageData(moniker, crispImage.Width, crispImage.Height, color);
