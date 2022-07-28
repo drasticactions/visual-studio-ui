@@ -10,5 +10,6 @@ namespace Microsoft.VisualStudioUI
     {
         [DefaultValue("")]
         string KnownMoniker { get; set; }
+        Microsoft.StandardUI.Color ImageBackgroundColor { get; set; }
     }
 }

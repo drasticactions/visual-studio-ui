@@ -28,5 +28,10 @@ namespace Microsoft.VisualStudioUI
             crispImage.KnownMoniker = value;
             return crispImage;
         }
+        public static T ImageBackgroundColor<T>(this T crispImage, Microsoft.StandardUI.Color value) where T : ICrispImage
+        {
+            crispImage.ImageBackgroundColor = value;
+            return crispImage;
+        }
     }
 }
