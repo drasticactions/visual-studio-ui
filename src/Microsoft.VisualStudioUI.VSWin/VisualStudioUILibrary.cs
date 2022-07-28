@@ -11,6 +11,7 @@
             {
                 VisualStudioUIFactory.HyperlinkButtonCreator = () => new Microsoft.VisualStudioUI.HyperlinkButton();
                 VisualStudioUIFactory.ImageCreator = () => new Microsoft.VisualStudioUI.Image();
+                VisualStudioUIFactory.CrispImageCreator = () => new Microsoft.VisualStudioUI.CrispImage();
             }
             Initialized = true;
         }

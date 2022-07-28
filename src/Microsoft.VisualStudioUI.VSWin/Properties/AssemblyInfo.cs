@@ -58,3 +58,4 @@ using Microsoft.VisualStudioUI;
 [assembly: ImportStandardControl(typeof(IVerticalTab))]
 [assembly: ImportStandardControl(typeof(IHyperlinkButton))]
 [assembly: ImportStandardControl(typeof(IImage))]
+[assembly: ImportStandardControl(typeof(ICrispImage))]
