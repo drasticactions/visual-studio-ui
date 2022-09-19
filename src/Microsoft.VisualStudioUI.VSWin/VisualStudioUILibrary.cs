@@ -1,4 +1,4 @@
-﻿namespace Microsoft.VisualStudioUI.VSWin
+﻿namespace Microsoft.VisualStudioUI.Wpf
 {
     // TODO: This will be generated but for now must be updated manually
     public static class VisualStudioUILibrary
@@ -9,9 +9,9 @@
         {
             if (!Initialized)
             {
-                VisualStudioUIFactory.HyperlinkButtonCreator = () => new Microsoft.VisualStudioUI.HyperlinkButton();
-                VisualStudioUIFactory.ImageCreator = () => new Microsoft.VisualStudioUI.Image();
-                VisualStudioUIFactory.CrispImageCreator = () => new Microsoft.VisualStudioUI.CrispImage();
+                VisualStudioUIFactory.HyperlinkButtonCreator = () => new HyperlinkButton();
+                VisualStudioUIFactory.ImageCreator = () => new Image();
+                VisualStudioUIFactory.CrispImageCreator = () => new CrispImage();
             }
             Initialized = true;
         }

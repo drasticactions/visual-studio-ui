@@ -15,7 +15,7 @@ namespace Microsoft.VisualStudioUI
         public override IUIElement Build()
         {
             VerticalTabsControl tabsControl = new VerticalTabsControl(new VerticalTabsViewModel(Control));
-            return new NativeUIElement(tabsControl);
+            return new WrappedNativeUIElement(tabsControl);
         }
     }
 }

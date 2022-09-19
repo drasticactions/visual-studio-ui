@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Welcome", "samples\Welcome\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.ComponentModelEx", "external\standard-ui\external\component-model-ex\src\Microsoft.ComponentModelEx\Microsoft.ComponentModelEx.csproj", "{02B78AE5-C656-44FA-AD19-033A5B2C3E67}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StandardUI.SourceGenerator", "external\standard-ui\src\Microsoft.StandardUI.SourceGenerator\Microsoft.StandardUI.SourceGenerator.csproj", "{64944921-CA9D-47A3-B058-F683FE31069E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.StandardUI.Analyzers", "external\standard-ui\src\Microsoft.StandardUI.Analyzers\Microsoft.StandardUI.Analyzers.csproj", "{64944921-CA9D-47A3-B058-F683FE31069E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GalleryExtension", "GalleryExtension", "{B9C15130-D082-4BCF-A35B-1B353EB8C942}"
 EndProject

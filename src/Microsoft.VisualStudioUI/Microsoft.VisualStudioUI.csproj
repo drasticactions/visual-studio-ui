@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -11,6 +11,16 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\external\standard-ui\src\Microsoft.StandardUI\Microsoft.StandardUI.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Analyzer Include="..\..\external\standard-ui\src\Microsoft.StandardUI.Analyzers\bin\$(Configuration)\netstandard2.0\Microsoft.StandardUI.Analyzers.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 
 </Project>

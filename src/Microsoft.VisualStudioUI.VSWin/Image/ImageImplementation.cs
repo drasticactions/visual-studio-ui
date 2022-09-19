@@ -13,7 +13,7 @@ namespace Microsoft.VisualStudioUI
 
         public override IUIElement Build()
         {
-            return new NativeUIElement(new ImageControl(Control));
+            return new WrappedNativeUIElement(new ImageControl(Control));
         }
     }
 }
