@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.Shell;
-using Microsoft.VisualStudioUI.VSWin;
+using Microsoft.VisualStudioUI.Wpf;
 using System;
 using System.Runtime.InteropServices;
 using System.Threading;

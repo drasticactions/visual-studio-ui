@@ -95,7 +95,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\external\standard-ui\src\Microsoft.StandardUI.SourceGenerator\Microsoft.StandardUI.SourceGenerator.csproj">
+    <ProjectReference Include="..\..\..\external\standard-ui\src\Microsoft.StandardUI.Analyzers\Microsoft.StandardUI.Analyzers.csproj">
       <Project>{64944921-ca9d-47a3-b058-f683fe31069e}</Project>
       <Name>StandardUI.SourceGenerator</Name>
     </ProjectReference>
@@ -121,7 +121,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Analyzer Include="..\..\..\external\standard-ui\src\Microsoft.StandardUI.SourceGenerator\bin\$(Configuration)\netstandard2.0\Microsoft.StandardUI.SourceGenerator.dll" />
+    <Analyzer Include="..\..\..\external\standard-ui\src\Microsoft.StandardUI.Analyzers\bin\$(Configuration)\netstandard2.0\Microsoft.StandardUI.Analyzers.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
