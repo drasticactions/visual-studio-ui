@@ -251,6 +251,7 @@ namespace Microsoft.VisualStudioUI.VSMac.Options
                     TextField = new NSTextField
                     {
                         Frame = new CoreGraphics.CGRect(0, 2, tableColumn.Width, 20),
+                        AutoresizingMask = NSViewResizingMask.WidthSizable,
                         Hidden = false,
                         Bordered = false,
                         DrawsBackground = false,
