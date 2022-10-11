@@ -1,11 +1,9 @@
-﻿using AppKit;
-using CoreGraphics;
+﻿using System;
 using Microsoft.VisualStudioUI.Options;
 using Microsoft.VisualStudioUI.StandaloneApp;
-using Microsoft.VisualStudioUI.VSMac;
 using Microsoft.VisualStudioUI.VSMac.Options;
 
-namespace Microsoft.VisualStudioUI.StandaloneApp.VSMacUI
+namespace StandaloneApp.VSMacUI
 {
     public class MainWindow : NSWindow
     {
@@ -64,3 +62,4 @@ namespace Microsoft.VisualStudioUI.StandaloneApp.VSMacUI
         }
     }
 }
+

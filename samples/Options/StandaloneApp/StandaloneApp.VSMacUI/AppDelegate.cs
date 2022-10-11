@@ -1,26 +1,18 @@
-﻿using AppKit;
-using Foundation;
+namespace StandaloneApp.VSMacUI;
 
-namespace Microsoft.VisualStudioUI.StandaloneApp.VSMacUI
-{
-    [Register("AppDelegate")]
-    public class AppDelegate : NSApplicationDelegate
-    {
-        MainWindowController mainWindowController;
+[Register ("AppDelegate")]
+public class AppDelegate : NSApplicationDelegate {
 
-        public AppDelegate()
-        {
-        }
+    private MainWindowController? mainWindowController;
 
-        public override void DidFinishLaunching(NSNotification notification)
-        {
-            mainWindowController = new MainWindowController();
-            mainWindowController.Window.MakeKeyAndOrderFront(this);
-        }
-
-        public override void WillTerminate(NSNotification notification)
-        {
-            // Insert code here to tear down your application
-        }
+    public override void DidFinishLaunching (NSNotification notification)
+	{
+        this.mainWindowController = new MainWindowController();
+        this.mainWindowController.Window.MakeKeyAndOrderFront(this);
     }
+
+	public override void WillTerminate (NSNotification notification)
+	{
+		// Insert code here to tear down your application
+	}
 }
